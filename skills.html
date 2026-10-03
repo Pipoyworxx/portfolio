@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Portfolio</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  <header class="header">
+      <a href="#" class="logo">
+  <img src="logo.jfif" alt="Logo" />
+</a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+  </header>
+
+  <section class="skills" id="skills">
+    <h2 class="heading">My Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill-box">
+        <h3>Basic Networking</h3>
+        <p>Knowledge of configuring routers, switches, and network setup for LAN connections, IP addressing, and troubleshooting connectivity issues.</p>
+        <button class="see-photos-btn" onclick="openCarousel('networking')">See Photos</button>
+      </div>
+
+      <div class="skill-box">
+        <h3>Frontend Development</h3>
+        <p>Experience in creating responsive websites using HTML, CSS, and JavaScript, with focus on modern and interactive UI design.</p>
+        <button class="see-photos-btn" onclick="openCarousel('frontend')">See Photos</button>
+      </div>
+
+      <div class="skill-box">
+        <h3>System Administration</h3>
+        <p>Understanding of managing computer systems, user accounts, updates, and security policies to ensure smooth operation.</p>
+        <button class="see-photos-btn" onclick="openCarousel('system')">See Photos</button>
+      </div>
+
+      <div class="skill-box">
+        <h3>Computer Hardware</h3>
+        <p>Ability to assemble, maintain, and troubleshoot computers including hardware diagnostics and component installation.</p>
+        <button class="see-photos-btn" onclick="openCarousel('hardware')">See Photos</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="photoModal" class="modal">
+    <span class="close" onclick="closeCarousel()">&times;</span>
+    <div class="carousel">
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <img id="carouselImage" src="" alt="Skill Photos">
+      <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

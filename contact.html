@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portfolio</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+  <header class="header">
+      <a href="#" class="logo">
+  <img src="logo.jfif" alt="Logo" />
+</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+  </header>
+
+  <!-- ✅ CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Get in <span>Touch</span></h2>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p>If you’d like to collaborate, discuss a project, or just say hello — feel free to reach out! I’ll do my best to respond as soon as possible.</p>
+
+        <div class="contact-details">
+          <p><strong>Email:</strong> rosevell@gmail.com</p>
+          <p><strong>Phone:</strong> +63 912 345 6789</p>
+          <p><strong>Location:</strong> Iloilo City, Philippines</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-send">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ✅ MODAL CONFIRMATION -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Message Sent Successfully!</h3>
+      <p>Thank you for reaching out. I’ll get back to you as soon as I can!</p>
+      <button onclick="closeModal()" class="btn-ok">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
